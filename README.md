@@ -34,57 +34,43 @@ The dataset used in this analysis was provided in a clean and consistent format.
 ### Data Analysis
 SQL was used to query the dataset to extract valuable insights and arrive at actionable recommendation.
 Here are the queries deployed in this analyis.
-- Average water availability (liters per capita per day) for each country
+
 ```sql
 SELECT country,
 avg(`Water Availability (liters per capita per day)`) AS Avg_Water_Availability
 from water_supply_sanitation_africa
 group by country;
-```
-- Communities where at least one water point is non-functional
-```sql
+
 SELECT `Community Name`, `Number of Non-Functional Water Points`
 FROM water_supply_sanitation_africa
 WHERE `Number of Non-Functional Water Points` >= 1;
-```
-- Top five communities with the highest annual sanitation maintenance costs
-```sql
+
 SELECT `Community Name`, `Annual Maintenance Cost (USD)`
 FROM water_supply_sanitation_africa
 ORDER BY `Annual Maintenance Cost (USD)` DESC
 LIMIT 5;
-```
-- Total number of functional and non-functional water points per country
-```sql
+
 SELECT Country, sum(`Number of Functional Water Points`) AS `Total Functional WaterPoints`, 
                 sum(`Number of Non-Functional Water Points`) AS `Total Non Functional Water Points`
 FROM water_supply_sanitation_africa
 GROUP BY Country
 ORDER BY `Total Functional WaterPoints`;
-```
-- Communities with a high incidence of waterborne diseases (>20%)
-```sql
+
 SELECT `Community Name`, `Waterborne Diseases Incidence Rate (%)`
 FROM water_supply_sanitation_africa
 WHERE `Waterborne Diseases Incidence Rate (%)` > 20;
-```
-- Average distance to the water source per region
-```sql
+
 SELECT region,
 avg (`Average distance to water source (km)`)
 AS` Average distance to water source (km)`
 FROM water_supply_sanitation_africa
 GROUP BY region;
-```
-- Communities that receive both government and NGO support
-```sql
+
 SELECT `Community Name` AS `Communities that receive both government and NGO support`
 FROM water_supply_sanitation_africa
 WHERE `Government Support` = 'Yes'
 AND `NGO Support` = 'Yes';
-```
-- Community with the highest population per country
-```sql
+
 SELECT country, `Community Name`, population
 FROM water_supply_sanitation_africa AS 	 table_1
 WHERE Population = (  
