@@ -40,37 +40,44 @@ SELECT country,
 avg(`Water Availability (liters per capita per day)`) AS Avg_Water_Availability
 from water_supply_sanitation_africa
 group by country;
-
+```
+```sql
 SELECT `Community Name`, `Number of Non-Functional Water Points`
 FROM water_supply_sanitation_africa
 WHERE `Number of Non-Functional Water Points` >= 1;
-
+```
+```sql
 SELECT `Community Name`, `Annual Maintenance Cost (USD)`
 FROM water_supply_sanitation_africa
 ORDER BY `Annual Maintenance Cost (USD)` DESC
 LIMIT 5;
-
+```
+```sql
 SELECT Country, sum(`Number of Functional Water Points`) AS `Total Functional WaterPoints`, 
                 sum(`Number of Non-Functional Water Points`) AS `Total Non Functional Water Points`
 FROM water_supply_sanitation_africa
 GROUP BY Country
 ORDER BY `Total Functional WaterPoints`;
-
+```
+```sql
 SELECT `Community Name`, `Waterborne Diseases Incidence Rate (%)`
 FROM water_supply_sanitation_africa
 WHERE `Waterborne Diseases Incidence Rate (%)` > 20;
-
+```
+```sql
 SELECT region,
 avg (`Average distance to water source (km)`)
 AS` Average distance to water source (km)`
 FROM water_supply_sanitation_africa
 GROUP BY region;
-
+```
+```sql
 SELECT `Community Name` AS `Communities that receive both government and NGO support`
 FROM water_supply_sanitation_africa
 WHERE `Government Support` = 'Yes'
 AND `NGO Support` = 'Yes';
-
+```
+```sql
 SELECT country, `Community Name`, population
 FROM water_supply_sanitation_africa AS 	 table_1
 WHERE Population = (  
