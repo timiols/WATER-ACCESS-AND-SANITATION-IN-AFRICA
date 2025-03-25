@@ -13,7 +13,7 @@
 This project analyzes water access and sanitation across various communities in multiple African countries. By examining key patterns and trends within the dataset, the analysis aims to uncover disparities, identify critical areas for improvement, and provide data-driven recommendations. The insights generated will help governments, policymakers, and stakeholders implement effective strategies to enhance water accessibility and sanitation infrastructure in these communities.
 
 ### Data Source
-Axia Africa : The primary data used for this analysis is the "Water_access_and_sanitation_in_africa.csv" containing details about water availability and sanitation in several communities in selected african countires.
+Axia Africa : The primary data used for this analysis is the [Water supply & sanitation in Africa](Water_Supply_Sanitation_Africa.csv) dataset containing details about water availability and sanitation in several communities in selected african countires.
 
 ### Tools
 - Power query
