@@ -8,7 +8,7 @@
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
 - [Results/Findings](#results-findings)
-- [Reccomendations](#reccomendations)
+- [Recomendations](#recomendations)
 
 ### Project Overview
 This project analyzes water access and sanitation across various communities in multiple African countries. By examining key patterns and trends within the dataset, the analysis aims to uncover disparities, identify critical areas for improvement, and provide data-driven recommendations. The insights generated will help governments, policymakers, and stakeholders implement effective strategies to enhance water accessibility and sanitation infrastructure in these communities.
@@ -94,7 +94,7 @@ ORDER BY population DESC;
 - Some communities lack both government and NGO support, making them vulnerable to poor water access and sanitation.
 - Some communities lack proper sanitation facilities, increasing the risk of waterborne diseases.
 - Some regions have higher annual maintenance costs but low functional water points- an indication of poor resouce management.
-### Reccomendations
+### Recomendations
 -	Prioritize Maintenance & Repair of Non-Functional Water Points
 -	Increase Water Infrastructure in High-Population, Low-Water Communities
 -	Reduce Distance to Water Sources in Remote Regions by developing closer water points in communities where the average distance is significantly high.
